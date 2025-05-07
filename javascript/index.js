@@ -8,7 +8,7 @@ const themeToggleBtn = document.querySelector("#theme-toggler");
 const words = [
   'developer',
   'designer',
-  'content creator',
+  'photographer',
 ];
 let i = 0;
 animate(words[i]);
