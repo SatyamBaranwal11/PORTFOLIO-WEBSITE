@@ -60,18 +60,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 function handleResponsive() {
   const width = window.innerWidth;
 
-  // Adjust header padding on scroll for mobile
-  window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    if (width <= 768) {
-      if (window.scrollY > 50) {
-        header.style.padding = "10px 0";
-      } else {
-        header.style.padding = "20px 0";
-      }
-    }
-  });
-
   // Adjust section padding based on screen size
   const sections = document.querySelectorAll("section");
   sections.forEach((section) => {
