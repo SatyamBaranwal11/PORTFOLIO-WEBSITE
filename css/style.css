@@ -780,8 +780,16 @@ textarea:focus{
 }
 
 @media screen and (max-width: 600px) {
+  .project-card{
+    gap: 0;
+    padding: 0;
+  }
+  .project-content {
+    padding: 16px;
+  }
   .project-image {
     width: 100%;
+    border-radius: 0;
   }
   .project-card {
     flex-direction: column-reverse;
