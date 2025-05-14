@@ -6,6 +6,9 @@ const keystep = document.querySelector("#keystep");
 const themeToggleBtn = document.querySelector("#theme-toggler");
 
 const words = [
+  'fresher',
+  'learner',
+  'tech enthusiast',
   'developer',
   'designer',
   'photographer',

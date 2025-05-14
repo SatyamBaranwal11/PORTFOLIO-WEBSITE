@@ -189,9 +189,40 @@
                 </a>
               </div>
             </div>
+            
 
             <div class="project-image">
               <img src="./assets/project screenshots/sortify.gif" alt="" />
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Scriptify</h3>
+              <p>
+               It is used to convert the handwritten text to digital text using
+                OCR technology.
+              </p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  href="https://github.com/SatyamBaranwal11/SCRIPTIFY"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a
+                  target="_blank"
+                  href="https://handwritingtotext.netlify.app/"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"> </i> Demo
+                </a>
+              </div>
+            </div>
+            
+
+            <div class="project-image">
+              <img src="./assets/project screenshots/scriptify.gif" alt="" />
             </div>
           </div>
           <div class="project-card">
@@ -269,7 +300,7 @@
             </div>
 
             <div class="project-image">
-              <img src="./assets/project screenshots/portfolio.png" alt="" />
+              <img src="./assets/project screenshots/portfolio.gif" alt="" />
             </div>
           </div>
 
@@ -348,79 +379,30 @@
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-          <form class="contact-form">
-            <div class="form-group">
-              <label for="fullname">Full Name</label>
-              <input type="text" id="fullname" name="fullname" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Your Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <center>
-              <button
-                type="submit"
-                class="btn btn-primary"
-                style="
-                  width: 50%;
-                  color: #1d4ed8;
-                  padding: 10px;
-                  border-radius: 10px;
-                "
-              >
-                <i class="fas fa-paper-plane"></i> Send Message
-              </button>
-            </center>
-          </form>
+      <section id="contact" class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <input type="text" name="name" id="fullname" placeholder="Full name" required>
+                <input type="email" name="email" id="email" placeholder="Email address" required>
+                <textarea name="message" id="message" placeholder="Your Message"></textarea>
+            </form>
+            <button id="message-btn" class="gold">
+                <div class="icon">
+                    <img src="./assets/icons/paper-plane.svg" alt="paper plane icon" loading="lazy">
+                </div>
+                Send Message
+            </button>
+        </section>
 
-          <div class="divider"></div>
-
-          <div class="contact-buttons">
-            <a
-              href="path/to/your/resume.pdf"
-              class="btn btn-primary"
-              download="Satyam_Baranwal_Resume"
-            >
-              <i class="fas fa-download"></i> Download Resume
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yourprofile"
-              class="btn btn-outline"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin"></i> LinkedIn Profile
-            </a>
-          </div>
-
-          <div class="social-links">
-            <a
-              href="https://github.com/yourusername"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yourprofile"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="mailto:youremail@example.com" class="social-link">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
+        <div class="alert"></div>
+        <div class="loader">
+            <div class="dot" style="--i: 0;"></div>
+            <div class="dot" style="--i: 1;"></div>
+            <div class="dot" style="--i: 2;"></div>
         </div>
-      </section>
+        
     </div>
     <script src="./javascript/index.js"></script>
+    <script src="./javascript/form.js"></script>
   </body>
 </html>
