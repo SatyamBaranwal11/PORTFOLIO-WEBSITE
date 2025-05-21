@@ -670,6 +670,11 @@ textarea {
   aspect-ratio: 1;
   border-radius: 50%;
 }
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 #message-btn {
   display: flex;
   align-items: center;
@@ -679,8 +684,26 @@ textarea {
   border: none;
   cursor: pointer;
   margin-left: auto;
-  padding: 16px 20px;
+  padding: 17px 20px;
+  position: relative;
+  top: 8px;
 }
+#resume {
+ display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 17px 20px;
+  position: relative;
+  top: 8px;
+
+}
+
+ 
+  
 button:disabled {
   filter: grayscale(50%);
   cursor: not-allowed !important;

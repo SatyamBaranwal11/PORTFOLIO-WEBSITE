@@ -1,0 +1,38 @@
+# Netlify Build Configuration
+[build]
+  command = "npm install --prefix backend"
+  functions = "backend/functions"
+  publish = "dist"  # Set this to your build folder if you're using a frontend framework
+
+# Redirects for API Calls
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  force = true
+
+# Edge Functions Configuration (Disabled to prevent CLI crashes)
+[[edge_functions]]
+path = "/send-mail"
+function = "send-mail"
+
+
+# Local Dev Server Configuration
+[dev]
+  command = "npm run dev"
+  port = 8888
+  publish = "."
+  framework = "vite"  # Adjust this based on your frontend tech (e.g., Next.js, React, Angular)
+
+# Environment Variables
+[context.production.environment]
+  NODE_ENV = "production"
+  EMAIL_USER = "your-email@gmail.com"
+  EMAIL_PASS = "your-app-password"
+  EMAIL_TO = "recipient-email@gmail.com"
+
+[context.dev.environment]
+  NODE_ENV = "development"
+  EMAIL_USER = "your-email@gmail.com"
+  EMAIL_PASS = "your-app-password"
+  EMAIL_TO = "recipient-email@gmail.com"
